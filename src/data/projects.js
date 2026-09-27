@@ -27,7 +27,7 @@ export const projects = [
     title: "VR Bro's Garage",
     description: "A responsive car-care frontend focused on clear service discovery, responsive sections and conversion-friendly UI.",
     stack: ["HTML5", "CSS3", "Bootstrap"],
-    image: "https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=1200&q=80",
+    image: "/src/assets/VR Bro's Garage SS.JPG",
     live: "https://vr-bro-s-garage.vercel.app",
     github: "https://github.com/pawardhruv/VR-Bro-s-Garage-.git"
   }

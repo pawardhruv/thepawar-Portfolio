@@ -25,7 +25,7 @@ export default function Navbar() {
       </div>
       {open && <div className="lg:hidden border-t border-white/5 bg-ink px-6 py-5 space-y-2">
         {links.map(x => <button key={x} onClick={() => go(x)} className="mobile-link">{x}</button>)}
-        <a className="btn w-full mt-3" href="/Dhruv-Pawar-Resume.pdf" download><Download size={15}/> Download Resume</a>
+        <a className="btn w-full mt-3" href="/public/thepawarresume.pdf" download><Download size={15}/> Download Resume</a>
       </div>}
     </header>
   );
