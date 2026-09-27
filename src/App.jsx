@@ -5,6 +5,13 @@ import { projects } from './data/projects';
 import Navbar from './components/Navbar';
 import CursorGlow from './components/CursorGlow';
 import SectionHeading from './components/SectionHeading';
+import img12ththumbnail from "./assets/certificates/12thmarksheetThumbnail"
+import imgbcathumbnail from "./assets/certificates/bcadegreethumbnail"
+import imgtechwarthumbnail from "./assets/certificates/techwarthumbnail"
+import img12thmarksheet from "./assets/certificates/12thMarksheet"
+import imgbcadegree from "./assets/certificates/bcadegree"
+import imgtechwar from "./assets/certificates/Techwar-2026"
+
 
 const skills = {
   "Frontend Development": ["JavaScript (ES6+)", "React.js", "Next.js", "HTML5", "CSS3", "Tailwind CSS", "Bootstrap"],
@@ -122,15 +129,15 @@ export default function App() {
               whileHover={{ y: -7 }}
               onClick={() =>
                 setSelectedCertificate({
-                  image: "/src/assets/certificates/12thMarksheet.jpeg",
+                  image: img12thmarksheet,
                   name: "12th Higher Secondary certificate",
-                  file: "/certificates/certificate-1.jpg"
+                  file: img12thmarksheet
                 })
               }
             >
               <div className="certificate-image">
                 <img
-                  src="/src/assets/certificates/12thmarksheetThumbnail.png"
+                  src= {img12ththumbnail}
                   alt="12th Higher Secondary certificate"
                 />
               </div>
@@ -153,15 +160,15 @@ export default function App() {
               whileHover={{ y: -7 }}
               onClick={() =>
                 setSelectedCertificate({
-                  image: "/src/assets/certificates/bcadegree.jpeg",
+                  image: imgbcadegree,
                   name: "Bachelor of Computer Application",
-                  file: "/src/assets/certificates/bcadegree.jpeg"
+                  file: imgbcadegree
                 })
               }
             >
               <div className="certificate-image">
                 <img
-                  src="/src/assets/certificates/bcadegreethumbnail.png"
+                  src={imgbcathumbnail}
                   alt="BCA Degree Certificate"
                 />
               </div>
@@ -184,15 +191,15 @@ export default function App() {
               whileHover={{ y: -7 }}
               onClick={() =>
                 setSelectedCertificate({
-                  image: "/src/assets/certificates/Techwar-2026.jpg",
+                  image: imgtechwar,
                   name: "TechWar 2026 - C Tsunami",
-                  file: "/src/assets/certificates/Techwar-2026.jpg"
+                  file: imgtechwar
                 })
               }
             >
               <div className="certificate-image">
                 <img
-                  src="/src/assets/certificates/techwarthumbnail.png"
+                  src={imgtechwarthumbnail}
                   alt="Techwar 2026 Certificate of Participation"
                 />
               </div>
