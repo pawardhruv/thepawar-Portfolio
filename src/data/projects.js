@@ -1,3 +1,4 @@
+import vrbrosimg from "../assets/projects/vrbros.jpg"
 export const projects = [
   {
     title: "Pawar's Outfit",
@@ -27,7 +28,7 @@ export const projects = [
     title: "VR Bro's Garage",
     description: "A responsive car-care frontend focused on clear service discovery, responsive sections and conversion-friendly UI.",
     stack: ["HTML5", "CSS3", "Bootstrap"],
-    image: "/src/assets/VR Bro's Garage SS.JPG",
+    image: vrbrosimg,
     live: "https://vr-bro-s-garage.vercel.app",
     github: "https://github.com/pawardhruv/VR-Bro-s-Garage-.git"
   }
