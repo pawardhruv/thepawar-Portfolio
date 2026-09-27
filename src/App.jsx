@@ -5,12 +5,12 @@ import { projects } from './data/projects';
 import Navbar from './components/Navbar';
 import CursorGlow from './components/CursorGlow';
 import SectionHeading from './components/SectionHeading';
-import img12ththumbnail from "./assets/certificates/12thmarksheetThumbnail"
-import imgbcathumbnail from "./assets/certificates/bcadegreethumbnail"
-import imgtechwarthumbnail from "./assets/certificates/techwarthumbnail"
-import img12thmarksheet from "./assets/certificates/12thMarksheet"
-import imgbcadegree from "./assets/certificates/bcadegree"
-import imgtechwar from "./assets/certificates/Techwar-2026"
+import img12ththumbnail from "./assets/certificates/12thmarksheetThumbnail.png"
+import imgbcathumbnail from "./assets/certificates/bcadegreethumbnail.png"
+import imgtechwarthumbnail from "./assets/certificates/techwarthumbnail.png"
+import img12thmarksheet from "./assets/certificates/12thMarksheet.jpeg"
+import imgbcadegree from "./assets/certificates/bcadegree.jpeg"
+import imgtechwar from "./assets/certificates/Techwar-2026.jpg"
 
 
 const skills = {
