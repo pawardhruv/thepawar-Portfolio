@@ -5,13 +5,6 @@ import { projects } from './data/projects';
 import Navbar from './components/Navbar';
 import CursorGlow from './components/CursorGlow';
 import SectionHeading from './components/SectionHeading';
-import img12ththumbnail from "./assets/certificates/12thmarksheetThumbnail.png"
-import imgbcathumbnail from "./assets/certificates/bcadegreethumbnail.png"
-import imgtechwarthumbnail from "./assets/certificates/techwarthumbnail.png"
-import img12thmarksheet from "./assets/certificates/12thMarksheet.jpeg"
-import imgbcadegree from "./assets/certificates/bcadegree.jpeg"
-import imgtechwar from "./assets/certificates/Techwar-2026.jpg"
-
 
 const skills = {
   "Frontend Development": ["JavaScript (ES6+)", "React.js", "Next.js", "HTML5", "CSS3", "Tailwind CSS", "Bootstrap"],
@@ -57,8 +50,7 @@ export default function App() {
         <div className="relative z-10 max-w-5xl">
           <div className="status-pill"><span className="pulse-dot" /> Available for opportunities</div>
           <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: .15 }} className="hero-kicker">FULL STACK DEVELOPER / CREATIVE ENGINEER</motion.p>
-          <motion.h1 initial={{ opacity: 0, y: 35 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .2, duration: .8 }} className="hero-name">theonlypawar</motion.h1>
-          <motion.h2 initial={{ opacity: 0, y: 25 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .35, duration: .7 }} className="hero-title">Dhruv Rakesh Pawar<span>.</span></motion.h2>
+          <motion.h1 initial={{ opacity: 0, y: 35 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .2, duration: .8 }} className="hero-name">pawardhruv</motion.h1>
           <p className="hero-role">Full Stack Developer</p>
           <p className="hero-copy">Architecting high-performance web applications with clean code, modern stacks, and structured discipline.</p>
           <div className="flex flex-wrap gap-4 mt-8">
@@ -99,119 +91,6 @@ export default function App() {
             ["Bachelor of Computer Applications", "BCA Degree", "Mastered computer science fundamentals, database systems and software lifecycle principles."],
             ["Full Stack Web Development", "Certification — Pursuing", "Deep-diving into modern full-stack development, cloud readiness and scalable architecture."]
           ].map(([year, title, text], i) => <Reveal key={title} delay={i * .1}><div className="timeline-item"><div className="timeline-dot" /><div className="timeline-year">{year}</div><div className="glass-card p-6"><h3>{title}</h3><p>{text}</p></div></div></Reveal>)}
-        </div>
-      </section>
-
-      {/* Certificates */}
-      <section id="certificates" className="section">
-        <div className="section-shell">
-
-          <div className="eyebrow">CERTIFICATES</div>
-
-          <h2 className="section-title">
-            Learning <span>in progress.</span>
-          </h2>
-
-          <p className="section-copy">
-            Certificates and courses I have completed while improving my
-            development skills.
-          </p>
-
-          <div className="certificates-grid">
-
-            {/* Certificate 1 */}
-            <motion.div
-              className="certificate-card"
-              initial={{ opacity: 0, y: 35 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              whileHover={{ y: -7 }}
-              onClick={() =>
-                setSelectedCertificate({
-                  image: img12thmarksheet,
-                  name: "12th Higher Secondary certificate",
-                  file: img12thmarksheet
-                })
-              }
-            >
-              <div className="certificate-image">
-                <img
-                  src= {img12ththumbnail}
-                  alt="12th Higher Secondary certificate"
-                />
-              </div>
-
-              <div className="certificate-content">
-                <span className="certificate-number">01</span>
-                <h3>Higher Secondary (12th)</h3>
-                <p>GSEB Board Certificate</p>
-              </div>
-            </motion.div>
-
-
-            {/* Certificate 2 */}
-            <motion.div
-              className="certificate-card"
-              initial={{ opacity: 0, y: 35 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              whileHover={{ y: -7 }}
-              onClick={() =>
-                setSelectedCertificate({
-                  image: imgbcadegree,
-                  name: "Bachelor of Computer Application",
-                  file: imgbcadegree
-                })
-              }
-            >
-              <div className="certificate-image">
-                <img
-                  src={imgbcathumbnail}
-                  alt="BCA Degree Certificate"
-                />
-              </div>
-
-              <div className="certificate-content">
-                <span className="certificate-number">02</span>
-                <h3>Bachelor of Computer Application</h3>
-                <p>Graduation Degree</p>
-              </div>
-            </motion.div>
-
-
-            {/* Certificate 3 */}
-            <motion.div
-              className="certificate-card"
-              initial={{ opacity: 0, y: 35 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              whileHover={{ y: -7 }}
-              onClick={() =>
-                setSelectedCertificate({
-                  image: imgtechwar,
-                  name: "TechWar 2026 - C Tsunami",
-                  file: imgtechwar
-                })
-              }
-            >
-              <div className="certificate-image">
-                <img
-                  src={imgtechwarthumbnail}
-                  alt="Techwar 2026 Certificate of Participation"
-                />
-              </div>
-
-              <div className="certificate-content">
-                <span className="certificate-number">03</span>
-                <h3>TechWar 2026 - C Tsunami</h3>
-                <p>Coding Competition Certificate By Red & White Skill Education</p>
-              </div>
-            </motion.div>
-
-          </div>
         </div>
       </section>
 
